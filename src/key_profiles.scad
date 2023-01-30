@@ -15,6 +15,7 @@ include <key_profiles/cherry.scad>
 include <key_profiles/dss.scad>
 include <key_profiles/asa.scad>
 include <key_profiles/typewriter.scad>
+include <key_profiles/mx.scad>
 
 // man, wouldn't it be so cool if functions were first order
 module key_profile(key_profile_type, row, column=0) {
@@ -46,6 +47,8 @@ module key_profile(key_profile_type, row, column=0) {
     cherry_row(row, column) children();
   } else if (key_profile_type == "mt3") {
     mt3_row(row, column) children();  
+  } else if (key_profile_type == "mx") {
+    mx_row(row, column) children();  
   } else if (key_profile_type == "disable") {
     children();
   } else {

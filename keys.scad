@@ -8,13 +8,6 @@
 include <./includes.scad>
 
 
-// example key
-dcs_row(5) legend("⇪", size=9) key();
+mx_row() 2_75u() stabilized() rounded() sideways() key();
+//mx_row() 3_5u() stabilized(mm=19.05) rounded() sideways() key();
 
-// example row
-/* for (x = [0:1:4]) {
-  translate_u(0,-x) dcs_row(x) key();
-} */
-
-// example layout
-/* preonic_default("dcs") key(); */

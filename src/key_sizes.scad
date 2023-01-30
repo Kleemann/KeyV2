@@ -37,6 +37,10 @@ module 2_75u() {
   u(2.75) children();
 }
 
+module 3_5u() {
+  u(3.5) children();
+}
+
 module 6_25u() {
   u(6.25) children();
 }
