@@ -5,6 +5,7 @@ include <stems/alps.scad>
 include <stems/filled.scad>
 include <stems/cherry_stabilizer.scad>
 include <stems/choc.scad>
+include <stems/choc_stabilizer.scad>
 
 
 //whole stem, alps or cherry, trimmed to fit
@@ -21,6 +22,8 @@ module stem(stem_type, depth, slop, throw){
       filled_stem();
     } else if (stem_type == "cherry_stabilizer") {
       cherry_stabilizer_stem(depth, slop, throw);
+    } else if (stem_type == "choc_stabilizer") {
+      choc_stabilizer_stem(depth, slop, throw);
     } else if (stem_type == "choc") {
       choc_stem(depth, slop, throw);
     } else if (stem_type == "disable") {

@@ -13,7 +13,7 @@ module mx_row(row=3, column=0) {
   $top_tilt_y = side_tilt(column);
   $stem_inset = -1.65;
   $stem_type = "rounded_cherry"; // [cherry, alps, rounded_cherry, box_cherry, filled, disable]
-  $stabilizer_type = "cherry_stabilizer"; // [costar_stabilizer, cherry_stabilizer, disable]
+  $stabilizer_type = "choc_stabilizer"; // [costar_stabilizer, cherry_stabilizer, choc_stabilizer, disable]
   
 
   // this dish depth should match the depth of the uberdishing in fully sculpted mode

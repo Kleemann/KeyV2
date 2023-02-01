@@ -40,6 +40,13 @@ module flared(stem_type, loft, height) {
           square(outer_cherry_stabilizer_stem($stem_slop) - [2,2], center=true);
         }
       }
+    } else if (stem_type == "choc_stabilizer") {
+      cherry_scale = [scale_for_45(height, outer_cherry_stabilizer_stem($stem_slop)[0]), scale_for_45(height, outer_cherry_stabilizer_stem($stem_slop)[1])];
+      linear_extrude(height=height, scale = cherry_scale){
+        offset(r=1){
+          square(outer_cherry_stabilizer_stem($stem_slop) - [2,2], center=true);
+        }
+      }
     } else if (stem_type == "choc") {
       // single support, just the stem
       new_choc_scale = [scale_for_45(height, $choc_stem[0] + 5.7 - $stem_slop), scale_for_45(height, $choc_stem[1])];

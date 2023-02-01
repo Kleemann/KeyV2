@@ -24,6 +24,14 @@ function cherry_cross(slop, extra_vertical = 0) = [
   [1.15 + slop / 3, 4.23 + extra_vertical + slop / 3 + SMALLEST_POSSIBLE],
 ];
 
+// .005 purely for aesthetics, to get rid of that ugly crosshatch
+function choc_cross(slop, extra_vertical = 0) = [
+  // horizontal tine
+  [4.03 + slop, 1 + slop / 3],
+  // vertical tine
+  [1 + slop / 3, 4.23 + extra_vertical + slop / 3 + SMALLEST_POSSIBLE],
+];
+
 // TODO add side_sculpting
 function key_width_at_progress(progress = 0) = $bottom_key_width + ($unit * ($key_length - 1)) - $width_difference;
 function key_height_at_progress(progress = 0) = $bottom_key_height + ($unit * ($key_height - 1)) - $height_difference + $side_sculpting(progress);

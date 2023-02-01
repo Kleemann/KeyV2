@@ -8,6 +8,6 @@
 include <./includes.scad>
 
 
-mx_row() 2_75u() stabilized() rounded() sideways() key();
-//mx_row() 3_5u() stabilized(mm=19.05) rounded() sideways() key();
+//mx_row() 2_75u() stabilized() rounded() sideways() key();
+mx_row() 3_5u() stabilized(mm=22.2) rounded() sideways() key();
 
